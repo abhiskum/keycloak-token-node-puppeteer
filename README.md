@@ -35,8 +35,18 @@ Command line and web server approch to fetch tokens from Keycloak server.
          --data-urlencode 'username=<username>' \
          --data-urlencode 'password=<password>' \
          --data-urlencode 'token_type=<access/refresh/offline>' 
+         
+    curl --location --request POST 'http://localhost:3000/token' \
+         --header 'Content-Type: application/x-www-form-urlencoded' \
+         --data-urlencode 'username=<username>' \
+         --data-urlencode 'password=<password>' \
+         --data-urlencode 'client_id=backend-service' \
+         --data-urlencode 'client_secret=secret' \
+         --data-urlencode 'token_type=<access/refresh/offline>' 
   
 # Command line mode
    ## Command to get token
 
    USER=<username> PASS=<password> TOKEN_TYPE=<access/refresh/offline> node get_token_cmd.js
+   
+   USER=<username> PASS=<password> CLIENT_ID=<client_id> CLIENT_SECRET=<client_secret> TOKEN_TYPE=<access/refresh/offline> node get_token_cmd.js
