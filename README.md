@@ -37,5 +37,6 @@ Command line and web server approch to fetch tokens from Keycloak server.
          --data-urlencode 'token_type=<access/refresh/offline>' 
   
 # Command line mode
-Command to get token
-USER=<username> PASS=<password> TOKEN_TYPE=<access/refresh/offline> node get_token_cmd.js
+   ## Command to get token
+
+   USER=<username> PASS=<password> TOKEN_TYPE=<access/refresh/offline> node get_token_cmd.js
