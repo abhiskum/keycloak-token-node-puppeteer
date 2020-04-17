@@ -5,7 +5,7 @@ const urlencode = require('urlencode');
 const PropertiesReader = require('properties-reader');
 const prop = PropertiesReader('./app.properties');
 const getProperty = (pty) => {return prop.get(pty);}
-const capture_token = require('./capture_token.js');
+const capture_token = require(getProperty("capture.token.js.file.path"));
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));

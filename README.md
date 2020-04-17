@@ -21,6 +21,7 @@
     keycloak.url=http://<host>:<port>/auth/realms/<realm>/protocol/openid-connect
     client.id=<client_id>
     client.secret=<client_secret>
+    capture.token.js.file.path=./keycloak_capture_token.js
  
 ### Running in web server mode
    * Command to start server
