@@ -1,0 +1,18 @@
+{
+  "name": "fetchssotoken",
+  "version": "1.0.0",
+  "description": "Fetch SSO access token ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abhiskum, dkoul",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "puppeteer": "^2.1.1",
+    "urlencode": "^1.1.0",
+    "properties-reader": "^2.0.0"
+  }
+}

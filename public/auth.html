@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keycloak Auth</title>
+</head>
+
+<body>
+   <script>
+       window.location.replace("http://localhost:3000/token"+window.location.search+window.location.hash.replace("#", "&"));
+   </script>
+</body>
