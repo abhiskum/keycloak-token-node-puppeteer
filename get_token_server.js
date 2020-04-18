@@ -15,7 +15,7 @@ const server_port = getProperty("server.port");
 const server_url = getProperty("server.protocol")+"://"+getProperty("server.host")+":"+server_port;
 
 app.get('/auth', function(req, res) {
-    const token_type = req.query.token_type;
+    const token_type = req.query.token_type || 'access';
     const client_id = req.query.client_id || getProperty("client.id");
     const client_secret = req.query.client_secret || getProperty("client.secret");
     let scope = 'openid';
