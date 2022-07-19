@@ -13,6 +13,6 @@
     "request": "^2.88.2",
     "puppeteer": "^2.1.1",
     "urlencode": "^1.1.0",
-    "properties-reader": "^2.0.0"
+    "properties-reader": "^2.2.0"
   }
 }
